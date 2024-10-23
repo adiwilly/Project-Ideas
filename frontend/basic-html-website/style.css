@@ -1,0 +1,21 @@
+.logo {
+    width: 10px;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+.head {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+div div ul li {
+    list-style-type: none;
+}
+
+.reviews {
+    display: flex;
+}
