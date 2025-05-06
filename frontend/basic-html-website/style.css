@@ -1,16 +1,73 @@
-.logo {
-    width: 10px;
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    padding: 0;
 }
 
-nav ul li {
-    list-style-type: none;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;;
+    padding: 15px 40px;
+    border-bottom: 4px solid #0ea5e9;
 }
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
 .head {
     text-align: center;
+    margin-top: 40px;
+}
+
+.head h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.head p {
+    font-size: 10px;
 }
 
 .container {
     display: flex;
+    max-width: 960px;
+    margin: auto;
+    padding: 40px 20px;
 }
 div div ul li {
     list-style-type: none;
@@ -18,4 +75,10 @@ div div ul li {
 
 .reviews {
     display: flex;
+}
+
+
+footer {
+    text-align: center;
+
 }
