@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 1rem;
+    background: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 0.5rem;
+    color: black;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.section {
+    border: 1px solid #000;
+    padding: 1rem;
+}
+
+.reviews {
+    text-align: center;
+}
+
+.review-card {
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.sidebar {
+    width: 300px;
+    border: 1px solid #000;
+    padding: 1rem;
+    font-family: sans-serif;
+    margin: auto;
+    background-color: #fff;
+}
+
+.sidebar h2,
+.sidebar h3,
+.sidebar h4 {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar-section li {
+    padding: 0.3rem 0;
+    border: 1px solid #000;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+
+.sidebar-section a {
+    color: blue;
+    text-decoration: underline;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.profile nav a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.profile nav a:hover {
+    text-decoration: underline;
+}
+
+.profile h3 {
+    margin-top: 1 rem;
+}
+
+.subtext {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.3rem;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        border: none;
+        padding: 1rem;
+    }
+
+    .sidebar-section li {
+        font-size: 0.9rem;
+    }
+}
