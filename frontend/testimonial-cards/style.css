@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card.dark {
+    background: #333;
+    color: white;
+}
+
+.card.image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.subtitle {
+  color: #bbb;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.carousel {
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.carousel-nav span {
+  font-size: 2rem;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.carousel-nav img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
