@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.profile-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.form-left {
+  flex: 1 1 55%;
+}
+
+.form-right {
+  flex: 1 1 35%;
+  background: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+
+input:focus {
+  outline: 3px solid #007bff;
+}
+
+.input-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.eye-btn {
+  position: absolute;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #333;
+}
+
+.error input {
+  border-color: #e63946;
+  color: #e63946;
+}
+
+.error-message {
+  color: #e63946;
+  font-size: 0.9rem;
+}
+
+.progress-circle {
+  margin-bottom: 1rem;
+}
+
+.circle {
+  border: 5px solid #333;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.checklist li {
+  margin-bottom: 0.5rem;
+}

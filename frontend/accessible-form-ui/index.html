@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <form class="profile-form" aria-labelledby="form-title">
+      <div class="form-left">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="What should we call you?" aria-required="true" />
+        </div>
+
+        <div class="form-group error">
+          <label for="email">Email</label>
+          <input type="email" id="email" value="john@doe.com" aria-invalid="true" aria-required="true" />
+          <span class="error-message">Email is already taken</span>
+        </div>
+
+        <div class="form-group password-group">
+          <label for="password">Enter Password</label>
+          <div class="input-icon">
+            <input type="password" id="password" placeholder="xxxxxxxx" aria-required="true" />
+            <button type="button" aria-label="Show password" class="eye-btn">👁️</button>
+          </div>
+        </div>
+
+        <div class="form-group password-group">
+          <label for="confirm-password">Confirm Password</label>
+          <div class="input-icon">
+            <input type="password" id="confirm-password" placeholder="xxxxxxxx" aria-required="true" />
+            <button type="button" aria-label="Show confirm password" class="eye-btn">👁️</button>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Update Profile</button>
+      </div>
+
+      <div class="form-right">
+        <div class="progress-circle">
+          <div class="circle">65%</div>
+        </div>
+        <h2>Profile Completeness</h2>
+        <ul class="checklist">
+          <li><del>Create Account</del></li>
+          <li><del>Update Roadmap Progress</del></li>
+          <li><del>Setup Public Profile</del></li>
+          <li>Complete your first project</li>
+          <li>Invite your Friends</li>
+        </ul>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
